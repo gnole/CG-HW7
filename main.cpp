@@ -103,8 +103,8 @@ void bezieZ(std::vector<std::pair<int, int>> v, sf::RenderWindow &window){
 
         std::vector<std::pair<int, int>> vx;
         for (int i = 0; i < v.size() ; ++i) {
-
-            vx.push_back(std::make_pair(v[i].first * std::cos(alpha) - v[i].second * std::sin(alpha) , v[i].first * std::sin(alpha) + v[i].second * std::cos(alpha)));
+            vx.push_back(std::make_pair(v[i].first * std::cos(alpha) - v[i].second * std::sin(alpha) ,
+                                        v[i].first * std::sin(alpha) + v[i].second * std::cos(alpha)));
         }
 
         auto it0 = vx.begin();
